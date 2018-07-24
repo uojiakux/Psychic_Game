@@ -30,7 +30,7 @@ var computerChoices = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","
 var wins = 0;
 var losses = 0;
 var guessesLeft = 10;
-var guessesSoFar = 0;
+// var guessesSoFar = 0;
 
 // Everything else is going to be in response to a key press
 
@@ -155,7 +155,7 @@ if ((userGuess === "a") || (userGuess === "b") || (userGuess === "c") || (userGu
         } else {
         userText.textContent = event.key;
         document.querySelector("#user-text-guesses-left").innerHTML = guessesLeft --;
-        document.querySelector("#user-text-guesses-so-far").innerHTML = guessesSoFar ++;
+        // document.querySelector("#user-text-guesses-so-far").innerHTML = guessesSoFar ++;
         }
 
 
