@@ -27,8 +27,8 @@
 
 var computerChoices = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","s","t","u","v","w","x","y","z"];
 
-var wins = 0;
-var losses = 0;
+var wins = 1;
+var losses = 1;
 var guessesLeft = 10;
 
 // Everything else is going to be in response to a key press
@@ -155,15 +155,12 @@ if ((userGuess === "a") || (userGuess === "b") || (userGuess === "c") || (userGu
         userText.textContent = event.key;
         document.querySelector("#user-text-guesses-left").innerHTML = guessesLeft --;
         }
-        // } else if (guessesLeft === -1) {
-        //     userText.textContent = event.key;
-        //     document.querySelector("#user-text-guesses-left").innerHTML = guessesLeft === 10;
-        //     document.querySelector("#user-text-losses").innerHTML = losses++;
-        // }
+
+        // When user loses...
 
         if (guessesLeft === -1) {
             userText.textContent = event.key;
-            document.querySelector("#user-text-guesses-left").innerHTML = guessesLeft === 10;
+            document.querySelector("#user-text-guesses-left").innerHTML = "";
             document.querySelector("#user-text-losses").innerHTML = losses++;
         }
 
