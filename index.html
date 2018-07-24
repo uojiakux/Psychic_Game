@@ -33,6 +33,8 @@ var guessesLeft = 10;
 
 // Everything else is going to be in response to a key press
 
+// Creating a for loop for this function
+
 
 document.onkeyup = function StartGame(event) {
 
@@ -167,7 +169,13 @@ if ((userGuess === "a") || (userGuess === "b") || (userGuess === "c") || (userGu
 }
 }
 
+// Creating a game restart...
 
+if (wins++) {
+    StartGame(event);
+} else if (guessesLeft === -1) {
+    StartGame(event);
+}
 
 
 
