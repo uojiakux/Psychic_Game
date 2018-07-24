@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Psychic Game</title>
+</head>
+
+<body>
+
+<div id="Game">
+<h1>Guess What Letter I'm Thinking Of!</h1>
+
+    <p>Wins: </p> <span id="user-text-wins"></span>
+    <p>Losses: </p> <span id="user-text-losses"></span>
+    <p>Guesses Left: </p> <span id="user-text-guesses-left"></span>
+    <p>Your Guesses So Far: </p> <span id="user-text-guesses-so-far"></span>
+
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+
+var computerChoices = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","s","t","u","v","w","x","y","z"];
+
+var wins = 0;
+var losses = 0;
+var guessesLeft = 10;
+var guessesSoFar = 0;
+
+// Everything else is going to be in response to a key press
+
+
+document.onkeyup = function(evemt) {
+
+    var userGuess = event.key
+    var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+
+// Creating the if else statements also within the function
+
+if ((userGuess === "a") || (userGuess === "b") || (userGuess === "c") || (userGuess === "d") || (userGuess === "e") || (userGuess === "f") || (userGuess === "g") || (userGuess === "h") || (userGuess === "i") || (userGuess === "j") || (userGuess === "k") || (userGuess === "l") || (userGuess === "m") || (userGuess === "n") || (userGuess === "o") || (userGuess === "p") || (userGuess === "q") || (userGuess === "r") || (userGuess === "s") || (userGuess === "t") || (userGuess === "u") || (userGuess === "v") || (userGuess === "w") || (userGuess === "x") || (userGuess === "y") || (userGuess === "z")) {
+
+
+    if ((userGuess === "a") && (computerGuess === "a")) {
+        //   wins++;
+        } else if ((userGuess === "b") && (computerGuess === "b")) {
+        //   losses++;
+        } else if ((userGuess === "c") && (computerGuess === "c")) {
+        //   losses++;
+        } else if ((userGuess === "d") && (computerGuess === "d")) {
+        //   wins++;
+        } else if ((userGuess === "e") && (computerGuess === "e")) {
+        //   wins++;
+        } else if ((userGuess === "f") && (computerGuess === "f")) {
+        //   losses++;
+        } else if ((userGuess === "g") && (computerGuess === "g")) {
+        //   losses++;
+        } else if ((userGuess === "h") && (computerGuess === "h")) {
+        //   losses++;
+        } else if ((userGuess === "i") && (computerGuess === "i")) {
+        //   wins++;
+        } else if ((userGuess === "j") && (computerGuess === "j")) {
+        //   wins++;
+        } else if ((userGuess === "k") && (computerGuess === "k")) {
+        //   losses++;
+        } else if ((userGuess === "l") && (computerGuess === "l")) {
+        //   losses++;
+        } else if ((userGuess === "m") && (computerGuess === "m")) {
+        //   losses++;
+        } else if ((userGuess === "n") && (computerGuess === "n")) {
+        //   wins++;
+        } else if ((userGuess === "o") && (computerGuess === "o")) {
+        //   wins++;
+        } else if ((userGuess === "p") && (computerGuess === "p")) {
+        //   losses++;
+        } else if ((userGuess === "q") && (computerGuess === "q")) {
+        //   losses++;
+        } else if ((userGuess === "r") && (computerGuess === "r")) {
+        //   losses++;
+        } else if ((userGuess === "s") && (computerGuess === "s")) {
+        //   wins++;
+        } else if ((userGuess === "t") && (computerGuess === "t")) {
+        //   wins++;
+        } else if ((userGuess === "u") && (computerGuess === "u")) {
+        //   losses++;
+        } else if ((userGuess === "v") && (computerGuess === "v")) {
+        //   wins++;
+        } else if ((userGuess === "w") && (computerGuess === "w")) {
+        //   losses++;
+        } else if ((userGuess === "x") && (computerGuess === "x")) {
+        //   losses++;
+        } else if ((userGuess === "y") && (computerGuess === "y")) {
+        //   losses++;
+        } else if ((userGuess === "z") && (computerGuess === "z")) {
+        //   wins++;
+        }
+
+
+}
+}
+
+
+
+
+
+</script>
+
+</body>
+</html>
