@@ -155,7 +155,7 @@ if ((userGuess === "a") || (userGuess === "b") || (userGuess === "c") || (userGu
 
         } else {
         userText.textContent = event.key;
-        document.querySelector("#user-text-guesses-left").innerHTML = guessesLeft --;
+        document.querySelector("#user-text-guesses-left").innerHTML = guessesLeft--;
         }
 
         // When user loses...
@@ -168,15 +168,6 @@ if ((userGuess === "a") || (userGuess === "b") || (userGuess === "c") || (userGu
 
 }
 }
-
-// Creating a game restart...
-
-if (wins++) {
-    StartGame(event);
-} else if (guessesLeft === -1) {
-    StartGame(event);
-}
-
 
 
 </script>
