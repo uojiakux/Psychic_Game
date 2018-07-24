@@ -35,10 +35,12 @@ var guessesSoFar = 0;
 // Everything else is going to be in response to a key press
 
 
-document.onkeyup = function(evemt) {
+document.onkeyup = function StartGame(event) {
 
     var userGuess = event.key
     var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+
+    var userText = document.getElementById("user-text-guesses-so-far")
 
 
 // Creating the if else statements also within the function
@@ -47,57 +49,113 @@ if ((userGuess === "a") || (userGuess === "b") || (userGuess === "c") || (userGu
 
 
     if ((userGuess === "a") && (computerGuess === "a")) {
-        //   wins++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "b") && (computerGuess === "b")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "c") && (computerGuess === "c")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "d") && (computerGuess === "d")) {
-        //   wins++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "e") && (computerGuess === "e")) {
-        //   wins++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "f") && (computerGuess === "f")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "g") && (computerGuess === "g")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "h") && (computerGuess === "h")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "i") && (computerGuess === "i")) {
-        //   wins++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "j") && (computerGuess === "j")) {
-        //   wins++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "k") && (computerGuess === "k")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "l") && (computerGuess === "l")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "m") && (computerGuess === "m")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+        
         } else if ((userGuess === "n") && (computerGuess === "n")) {
-        //   wins++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "o") && (computerGuess === "o")) {
-        //   wins++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "p") && (computerGuess === "p")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "q") && (computerGuess === "q")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "r") && (computerGuess === "r")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "s") && (computerGuess === "s")) {
-        //   wins++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "t") && (computerGuess === "t")) {
-        //   wins++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "u") && (computerGuess === "u")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "v") && (computerGuess === "v")) {
-        //   wins++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "w") && (computerGuess === "w")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "x") && (computerGuess === "x")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "y") && (computerGuess === "y")) {
-        //   losses++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
         } else if ((userGuess === "z") && (computerGuess === "z")) {
-        //   wins++;
+        userText.textContent = event.key;
+        document.querySelector("#user-text-wins").innerHTML = wins++;
+
+        } else {
+        userText.textContent = event.key;
+        document.querySelector("#user-text-guesses-left").innerHTML = guessesLeft --;
+        document.querySelector("#user-text-guesses-so-far").innerHTML = guessesSoFar ++;
         }
 
 
